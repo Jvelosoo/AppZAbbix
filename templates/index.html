@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/templates/style.css">
+        <title>Zabbix</title>
+</head>
+<header>
+    <img src="/img/logoZabbix.png" alt="..." class="logoZabbix">
+<div class="menu">
+    <a href="">Máquina</a>
+    <a href="/templates/impressora.html">Impressora</a>
+</div>
+</header>
+<body>
+    <section class="container">
+        <form class="form" method="POST" action="{{ url_for('submit_form') }}" >
+
+            <label for="location" class="label">LOCALIZAÇÃO</label>
+            <input type="text" name="location" id="location">
+
+            <label for="machine_name" class="label">NOME DA MÁQUINA</label>
+            <input type="text" name="machine_name" id="machine_name">
+
+            <label for="ip" class="label">IP</label>
+            <input type="text" name="ip" id="ip">
+
+            <label for="serial_number" class="label">NÚMERO DE SÉRIE</label>
+            <input type="text" name="serial_number" id="serial_number">
+
+            <label for="asset_number" class="label">NÚMERO DE PATRIMÔNIO</label>
+            <input type="text" name="asset_number" id="asset_number">
+
+            <label for="monitor1_model" class="label">MODELO MONITOR 1</label>
+            <input type="text" name="monitor1_model" id="monitor1_model">
+
+            <label for="monitor1_serial" class="label">NÚMERO DE SÉRIE MONITOR 1</label>
+            <input type="text" name="monitor1_serial" id="monitor1_serial">
+
+            <label for="monitor1_asset" class="label">NÚMERO PATRIMÔNIO MONITOR 1</label>
+            <input type="text" name="monitor1_asset" id="monitor1_asset">
+
+            <label for="monitor2_model" class="label">MODELO MONITOR 2</label>
+            <input type="text" name="monitor2_model" id="monitor2_model">
+
+            <label for="monitor2_serial" class="label">NÚMERO DE SÉRIE MONITOR 2</label>
+            <input type="text" name="monitor2_serial" id="monitor2_serial">
+
+            <label for="monitor2_asset" class="label">NÚMERO PATRIMÔNIO MONITOR 2</label>
+            <input type="text" name="monitor2_asset" id="monitor2_asset">
+
+            <button class="submit" type="submit">Enviar</button> <!-- Substituído o input pelo botão -->
+            
+        </form>
+    </section>
+    
+</body>
+
+<footer>
+    <p>Desenvolvido por SMC STI</p>
+</footer>
+</html>
